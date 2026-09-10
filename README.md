@@ -4,6 +4,8 @@ Free tool to use Switch 2 Joy-Con and Pro controllers on Windows - Bluetooth pai
 
 **[⬇ Download for Windows](https://github.com/Runogrin/joycon2-pc/releases/latest)**
 
+![JoyCon 2 PC](JoyCon2PC.png)
+
 ---
 
 ## What it does
